@@ -1,0 +1,173 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: azure;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    min-height: 100vh;
+
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* FORM */
+
+form{
+    display: flex;
+    gap: 10px;
+
+    margin-bottom: 20px;
+}
+
+/* INPUT */
+
+input[type="text"]{
+
+    height: 50px;
+
+    width: 400px;
+
+    padding: 10px;
+
+    font-size: 22px;
+
+    border-radius: 10px;
+
+    border: none;
+
+    outline: none;
+
+    box-shadow: 2px 2px 5px gray;
+}
+
+/* ADD BUTTON */
+
+#add{
+
+    height: 50px;
+
+    width: 80px;
+
+    border-radius: 10px;
+
+    border: none;
+
+    cursor: pointer;
+
+    font-size: 16px;
+
+    font-weight: bold;
+
+    background-color: black;
+
+    color: white;
+
+    transition: 0.2s;
+}
+
+#add:hover{
+    transform: scale(1.05);
+}
+.hd{
+    font-size: 60px;
+    margin-bottom: 40px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-shadow: 3px 3px 3px rgb(120, 72, 153);  ;
+}
+
+/* MAIN TODO CONTAINER */
+
+.container{
+
+    height: 50vh;
+
+    width: 550px;
+
+    background-color: rgb(209, 181, 228);
+
+    border-radius: 15px;
+
+    box-shadow: 4px 4px 7px gray;
+
+    padding: 20px;
+
+    overflow-y: auto;
+}
+.container::-webkit-scrollbar{
+    width: 8px;
+}
+
+.container::-webkit-scrollbar-thumb{
+    background: gray;
+    border-radius: 10px;
+}
+
+/* TASK LIST */
+
+.list{
+
+    background: black;
+
+    min-height: 55px;
+
+    border-radius: 10px;
+
+    margin-top: 15px;
+
+    padding: 10px 15px;
+
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: center;
+
+    box-shadow: 4px 4px 4px gray;
+
+    cursor: pointer;
+}
+
+/* TASK TEXT */
+
+.list p{
+
+    color: white;
+
+    font-size: 20px;
+
+    word-break: break-word;
+}
+
+/* DELETE BUTTON */
+
+.btn{
+
+    height: 35px;
+
+    width: 35px;
+
+    border-radius: 50%;
+
+    border: none;
+
+    background-color: red;
+
+    color: white;
+
+    cursor: pointer;
+
+    font-size: 18px;
+
+    transition: 0.2s;
+}
+
+.btn:hover{
+    transform: scale(1.1);
+}
